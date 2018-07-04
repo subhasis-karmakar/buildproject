@@ -11,3 +11,6 @@ phases:
     commands:
       - echo cp -r /dist/* /
       - echo rm -rf /dist
+artifacts:
+  files:
+    - target/arn:aws:s3:::buildproject1
