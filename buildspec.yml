@@ -4,10 +4,16 @@ phases:
   install:
     commands:
       - npm install
+      - apt-get -f install
   build:
     commands:
       - echo npm run build
-      - echo ls -a
+  post_build:
+    commands:
+      - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
+      - cp *.zip /tmp/output-dir
 artifacts:
   files:
     - '*'
+  discard-paths: yes
+  base-directory: /tmp/output-dir/
