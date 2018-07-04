@@ -4,19 +4,10 @@ phases:
   install:
     commands:
       - npm install
-  pre_build:
-    commands:
-      - mkdir /tmp/output-dir
   build:
     commands:
      - cd $CODEBUILD_SRC_DIR
      - npm run build
-     - cd $CODEBUILD_SRC_DIR/dist/
-     - echo $PWD
-  post_build:
-    commands:
-      - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
-      - cp -r $CODEBUILD_SRC_DIR/dist/* /tmp/output-dir
 artifacts:
   files:
       - '**/*'
