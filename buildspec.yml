@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
-      - cp * /tmp/output-dir
+      - cp -r dist/* /tmp/output-dir
 artifacts:
   files:
     - '*'
