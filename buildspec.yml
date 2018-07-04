@@ -13,4 +13,4 @@ phases:
       - echo rm -rf /dist
 artifacts:
   files:
-    - target/arn:aws:s3:::buildproject1
+    - arn:aws:s3:::buildproject1
