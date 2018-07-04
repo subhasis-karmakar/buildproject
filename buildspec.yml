@@ -18,5 +18,7 @@ phases:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
       - cp -r $CODEBUILD_SRC_DIR/* /tmp/output-dir
 artifacts:
-  discard-paths: yes
+  files:
+      - '*'
+  discard-paths: no
   base-directory: $CODEBUILD_SRC_DIR/dist/*
