@@ -9,9 +9,9 @@ phases:
       - mkdir /tmp/output-dir
   build:
     commands:
-     - echo cd $CODEBUILD_SRC_DIR
-     - echo npm run build
-     - echo cd $CODEBUILD_SRC_DIR/dist/
+     - cd $CODEBUILD_SRC_DIR
+     - npm run build
+     - cd $CODEBUILD_SRC_DIR/dist/
      - echo $PWD
   post_build:
     commands:
