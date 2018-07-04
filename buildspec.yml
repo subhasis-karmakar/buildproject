@@ -10,8 +10,8 @@ phases:
   build:
     commands:
      - echo cd $CODEBUILD_SRC_DIR
-     - echo ll
      - echo npm run build
+     - echo cd $CODEBUILD_SRC_DIR/dist/
   post_build:
     commands:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
