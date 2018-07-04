@@ -1,6 +1,6 @@
 
 const path 			= require('path');
-const src_path 		= path.resolve('src/');
+const src_path 		= path.resolve('abc/');
 const dist_path 	= path.resolve('dist/');
 
 // Required for HTML files
