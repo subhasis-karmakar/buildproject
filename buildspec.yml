@@ -10,12 +10,11 @@ phases:
       - mkdir /tmp/output-dir
   build:
     commands:
-     - cd /codebuild/output/src865394398/src/github.com/subhasis-karmakar/buildproject 
      - echo npm run build
   post_build:
     commands:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
-      - cp *.zip /tmp/output-dir
+      - cp * /tmp/output-dir
 artifacts:
   files:
     - '*'
