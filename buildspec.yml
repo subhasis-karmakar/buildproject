@@ -13,6 +13,7 @@ phases:
      - npm run build
      - cd $CODEBUILD_SRC_DIR/dist/
      - echo $PWD
+     - ll
   post_build:
     commands:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
