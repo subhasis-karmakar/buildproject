@@ -16,9 +16,9 @@ phases:
   post_build:
     commands:
       - rm -rf /tmp/output-dir && mkdir /tmp/output-dir
-      - cp -r $CODEBUILD_SRC_DIR/* /tmp/output-dir
+      - cp -r $CODEBUILD_SRC_DIR/dist/* /tmp/output-dir
 artifacts:
   files:
       - '*'
-  discard-paths: no
-  base-directory: $CODEBUILD_SRC_DIR/dist/*
+  discard-paths: yes
+  base-directory: /tmp/output-dir
