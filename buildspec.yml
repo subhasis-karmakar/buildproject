@@ -20,5 +20,5 @@ phases:
 artifacts:
   files:
       - '**/*'
-  base-directory: /tmp/output-dir/dist
+  base-directory: /tmp/output-dir/dist*
   discard-paths: yes
