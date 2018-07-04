@@ -7,10 +7,6 @@ phases:
   build:
     commands:
       - echo npm run build
-  post_build:
-    commands:
-      - echo cp -r /dist/* /
-      - echo rm -rf /dist
 artifacts:
   files:
     - '*'
