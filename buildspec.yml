@@ -20,7 +20,7 @@ phases:
 artifacts:
   files:
       - '*'
-      - 'css/*.css'
-      - 'js/*.js'
+  directories:
+      - '*'
   discard-paths: yes
   base-directory: /tmp/output-dir
