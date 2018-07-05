@@ -8,6 +8,7 @@ phases:
     commands:
      - cd $CODEBUILD_SRC_DIR
      - npm run build
+     - cp $CODEBUILD_SRC_DIR/appspec.yml $CODEBUILD_SRC_DIR/dist/
 artifacts:
   files:
       - '**/*'
