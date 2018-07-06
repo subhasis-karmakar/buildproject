@@ -4,6 +4,13 @@ os: linux
 files:
    - source: /
      destination: /var/www/html
+permissions:
+   - object: /var/www/html
+     pattern: "**"
+     owner: root
+     group: www-data
+     type:
+       - file
 hooks:
   Application:
     - location: scripts/myscript.sh
