@@ -13,7 +13,7 @@ permissions:
      type:
        - file
 hooks:
-  Application:
+  AfterInstall:
     - location: scripts/myscript.sh
       timeout: 300
       runas: root
