@@ -9,11 +9,10 @@ permissions:
      pattern: "**"
      owner: root
      group: www-data
-     mode: 755
+     mode: 664
      type:
        - file
-hooks:
-  AfterInstall:
-    - location: scripts/myscript.sh
-      timeout: 300
-      runas: root
+     mode: 775
+     type:
+       - directory
+
