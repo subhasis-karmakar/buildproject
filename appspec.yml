@@ -9,10 +9,14 @@ permissions:
      pattern: "**"
      owner: root
      group: www-data
-     mode: 664
-     type:
-       - file
      mode: 775
      type:
        - directory
+   - object: /var/www/html
+     pattern: "**"
+     owner: root
+     group: www-data
+     mode: 664
+     type:
+       - file
 
